@@ -10,7 +10,7 @@
 
 function reverseInt(n) {
     const num = parseInt(n.toString().split('').reverse().join(''));
-    return Math.sign(n) >= 0  ? num : num * (-1);
+    return num * Math.sign(n);
 }
 
 module.exports = reverseInt;
